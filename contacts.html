@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Verve</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,300italic,300&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/flexslider.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/media.css">
+
+<link rel="stylesheet" href="css/color/color_1.css" id="theme-color">
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+</head>
+<body>
+	<php
+
+$to = "ahmed2100@gmail.com";
+$subject = "Email from my website";
+
+$name = $_post[name];
+$email = $_post[email];
+$comment = $_post[comment];
+
+$headers .= "content-type: text/html;/r/n";
+$headers .= "from: $email";
+
+mail($to, $subject, $comment, $headers);
+
+echo email have been sent! thank you $name
+?>
+
+<div id="page" class="page" style="background: #4b6975;">
+	<!-- Header -->
+	<header class="header">
+
+		<!-- Logotype -->
+		<p class="header-logo">
+			<a href="index.html">
+				<img src="img/logo.png" alt="">
+			</a>
+		</p>
+
+		<!-- Topmenu Toggle -->
+		<div class="mainmenu-btn" id="mainmenu-btn">
+			<div class="mainmenu-btn-line"></div>
+			<div class="mainmenu-btn-line"></div>
+			<div class="mainmenu-btn-line"></div>
+			<div class="mainmenu-btn-line"></div>
+		</div>
+
+		<!-- Search Form -->
+		<div class="header-search">
+			<a href="#" id="header-search-btn" class="header-search-btn"><i class="fa fa-search"></i></a>
+			<form action="#" id="header-search">
+				<input type="text" placeholder="Search..">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+
+	</header>
+	<!-- Header -->
+	<div class="card" data-state="#about">
+		<div class="card-header">
+		  <div class="card-cover" style="background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')"></div>
+		  <img class="card-avatar" src="https://mir-s3-cdn-cf.behance.net/user/115/fdcfeb1259490729.628d1d8c1328b.jpg" alt="avatar" />
+		  <h1 class="card-fullname">AHMEDSAAD</h1>
+		  <h10 class="card-jobtitle">UI Developer</h10>
+		</div>
+		<div class="card-main">
+		  <div class="card-section is-active" id="about">
+			<div class="card-content">
+			  <div class="card-subtitle">ABOUT</div>
+			  <p class="card-desc">مصمم جرافيك من ذوي الخبرة مع مجموعة هامة من المشاريع الناجحة في مختلف الصناعات
+				بارع في إنشاء تصميمات جذابة بصريًا لكل من المنصات المطبوعة والرقمية
+			  </p>
+			</div>
+			<div class="card-social">
+			  <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+				  <path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z" /></svg></a>
+			  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+				  <path d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z" /></svg></a>
+			  <a href="#"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+				  <path d="M301 256c0 24.852-20.148 45-45 45s-45-20.148-45-45 20.148-45 45-45 45 20.148 45 45zm0 0" />
+				  <path d="M332 120H180c-33.086 0-60 26.914-60 60v152c0 33.086 26.914 60 60 60h152c33.086 0 60-26.914 60-60V180c0-33.086-26.914-60-60-60zm-76 211c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.645 75-75 75zm86-146c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0" />
+				  <path d="M377 0H135C60.562 0 0 60.563 0 135v242c0 74.438 60.563 135 135 135h242c74.438 0 135-60.563 135-135V135C512 60.562 451.437 0 377 0zm45 332c0 49.625-40.375 90-90 90H180c-49.625 0-90-40.375-90-90V180c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0" /></svg></a>
+			  <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+				  <path d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 002.882 0z" /></svg></a>
+			</div>
+		  </div>
+		  <div class="card-section" id="experience">
+			<div class="card-content">
+			  <div class="card-subtitle">WORK EXPERIENCE</div>
+			  <div class="card-timeline">
+				<div class="card-item" data-year="2014">
+				  <div class="card-item-title">مصمم اعلانات </div>
+				  <div class="card-item-desc">بداية الحلم.</div>
+				</div>
+				<div class="card-item" data-year="2016">
+				  <div class="card-item-title">مهندس و متخرج من جامعه </div>
+				  <div class="card-item-desc">بداية التطوير.</div>
+				</div>
+				<div class="card-item" data-year="2018">
+				  <div class="card-item-title">مصمم مشهور و له مكانه خاصة</span></div>
+				  <div class="card-item-desc">بداية الابداع.</div>
+				</div>
+				<div class="card-item" data-year="2024">
+				  <div class="card-item-title">افضل مصمم في عصره</span></div>
+				  <div class="card-item-desc">بداية الشهرة و المعرفة.</div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="card-section" id="contact">
+			<div class="card-content">
+			  <div class="card-subtitle">CONTACT</div>
+			  <div class="card-contact-wrapper">
+				<div class="card-contact">
+				  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+					<circle cx="12" cy="10" r="3" /></svg>
+				  المحلة الكبري \ الشعبية \ اول البرج \ بجوار صيدلية الفردوس
+				</div>
+				<div class="card-contact">
+				  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" /></svg>01140873313</div>
+				<div class="card-contact">
+				  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+					<path d="M22 6l-10 7L2 6" /></svg>
+				  simpa2100@gmail.com
+				</div>
+				<button class="contact-me"><a href="https://www.facebook.com/profile.php?id=61550621397130">WORK TOGETHER</a></button> 
+                
+			</div>
+			</div>
+		  </div>
+		  <div class="card-buttons">
+			<button data-section="#about" class="is-active">ABOUT</button>
+			<button data-section="#experience">EXPERIENCE</button>
+			<button data-section="#contact">CONTACT</button>
+		  </div>
+		</div>
+	  </div>
+	<!-- Contacts -->
+	<div class="page-cont-wrap">
+		<div class="cont page-cont contacts">
+			<div class="contacts-form">
+				<h1>Contact Us</h1>
+				<!-- Contact Form -->
+				<form action="#" class="form-validate">
+					<input data-required="text" type="text" placeholder="Name" name="name1">
+					<input data-required="text" data-required-email="email" type="text" placeholder="Email address" name="email1">
+					<textarea data-required="text" placeholder="Message" name="mess1"></textarea>
+					<button type="submit">Send  <i class="fa fa-angle-right"></i></button>
+				
+				</form>
+			</div>
+			<div class="contacts-img">
+				<img src="https://scontent-mrs2-1.xx.fbcdn.net/v/t39.30808-6/369043568_122096918624020713_2391993392237990394_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=783fdb&_nc_ohc=Ncm1-8bBfssAX_IdKem&_nc_ht=scontent-mrs2-1.xx&oh=00_AfApAHC-hhUwV3-7EjDM01eXJht96EMunROQRBf-uQ9weQ&oe=65D7F5CC" alt="">
+			</div>
+			<!-- Map -->
+			<div class="contacts-map" id="contacts-map"><iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d213.78354307528525!2d31.164115806745915!3d30.983409060724473!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1708301913557!5m2!1sar!2seg" width="600" height="520" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+		</div>
+	</div>
+	<span class="line-ct-wrap"><span class="line-ct"></span></span>
+	<!-- Contacts -->
+
+</div>
+
+
+
+<!-- Navmenu -->
+<div class="mainmenu-bg" id="mainmenu-bg"></div>
+<nav class="mainmenu" id="mainmenu">
+	<ul>
+		<li>
+			<a href="index.html">Home</a>
+		</li>
+		<li class="mainmenu-parent">
+			
+			<ul>
+				<li>
+					<a href="blog.html">All posts</a>
+				</li>
+				<li>
+					<a href="blog.html">Stories</a>
+				</li>
+				<li>
+					<a href="blog.html">Travels</a>
+				</li>
+				<li>
+					<a href="blog.html">Cooking</a>
+				</li>
+				<li>
+					<a href="blog.html">Peoples</a>
+				</li>
+				<li>
+					<a href="post.html">Single Post</a>
+				</li>
+			</ul>
+		</li>
+		<li class="mainmenu-parent">
+			<a href="project.html">Portfolio <i class="fa fa-angle-down"></i></a>
+			<ul>
+				<li>
+					<a href="project.html">All projects</a>
+				</li>
+				<li>
+					<a href="project.html">Design</a>
+				</li>
+				<li>
+					<a href="project.html">Business</a>
+				</li>
+				<li>
+					<a href="project.html">Society</a>
+				</li>
+				<li>
+					<a href="project.html">Education</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="about.html">About</a>
+		</li>
+		<li class="active">
+			<a href="contacts.html">Contacts</a>
+		</li>
+		<li>
+			<a href="coming.html">Coming Soon</a>
+		</li>
+		<li>
+		</li>
+	</ul>
+</nav>
+<!-- Navmenu -->
+
+
+<!-- Footer -->
+<footer class="footer-wrap">
+	<div class="cont footer">
+
+		<!-- Logotype -->
+		<p class="footer-logo">
+			<a href="index.html">
+				<img src="img/logo.png" alt="">
+			</a>
+		</p>
+
+		<!-- Subscribe -->
+		<form class="form-validate footer-subscribe" action="#">
+			<input data-required="text" data-required-email="email" type="text" placeholder="Email address" name="email2">
+			<button type="submit">Subscribe <i class="fa fa-angle-right"></i></button>
+		</form>
+
+		<!-- Social Links -->
+		<ul class="footer-social">
+			
+			<li>
+				<a href="https://www.behance.net/ahmedsaad233" rel="nofollow" target="_blank">
+					<i class="fa fa-behance"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.facebook.com/profile.php?id=61550621397130" rel="nofollow" target="_blank">
+					<i class="fa fa-facebook"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://api.whatsapp.com/send/?phone=201140873313&text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85+%D8%B9%D9%84%D9%8A%D9%83%D9%85+%D9%85%D9%85%D9%83%D9%86+%D8%A7%D8%B9%D8%B1%D9%81+%D8%A7%D9%84%D9%85%D8%B2%D9%8A%D8%AF+%D9%85%D9%86+%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84+%D9%88%D8%A7%D9%84%D8%B3%D8%B9%D8%B1&type=phone_number&app_absent=0" rel="nofollow" target="_blank">
+					<i class="fa fa-whatsapp"></i>
+				</a>
+			</li>
+		</ul>
+
+		<!-- Copyright -->
+		<p class="footer-copyright">2024 © جميع الحقوق ل مكتب سيمبا و  اي خرق الي هذه الحقوق سيتم مقاضاتك</p>
+
+	</div>
+</footer>
+<!-- Footer -->
+
+
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/fancybox/fancybox.js"></script>
+<script src="js/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/jquery.fractionslider.js"></script>
+<script src="js/main.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+const buttons = document.querySelectorAll(".card-buttons button");
+const sections = document.querySelectorAll(".card-section");
+const card = document.querySelector(".card");
+
+const handleButtonClick = (e) => {
+  const targetSection = e.target.getAttribute("data-section");
+  const section = document.querySelector(targetSection);
+  targetSection !== "#about"
+    ? card.classList.add("is-active")
+    : card.classList.remove("is-active");
+  card.setAttribute("data-state", targetSection);
+  sections.forEach((s) => s.classList.remove("is-active"));
+  buttons.forEach((b) => b.classList.remove("is-active"));
+  e.target.classList.add("is-active");
+  section.classList.add("is-active");
+};
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", handleButtonClick);
+});
+</script> 
+
+</body>
+</html>
